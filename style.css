@@ -50,6 +50,7 @@
     hsl(35, 100%, 68%)
   );
 
+
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
@@ -60,10 +61,14 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --vegas-gold: rgb(229, 117, 31);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  /* custom solid */
+  --vt-burntOrange: rgb(229, 117, 31);
+  --vt-maroon: rgb(134, 31, 65);
 
   /**
      * typography
@@ -157,7 +162,7 @@ textarea {
 }
 
 :focus {
-  outline-color: var(--orange-yellow-crayola);
+  outline-color: rgb(229, 117, 31);
 }
 
 html {
@@ -198,7 +203,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--orange-yellow-crayola);
+  color: white;
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -271,7 +276,7 @@ article.active {
   left: 0;
   width: 30px;
   height: 3px;
-  background: var(--text-gradient-yellow);
+  background: var(--vt-burntOrange);
   border-radius: 3px;
 }
 
@@ -286,7 +291,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
+  background: rgb(229, 117, 31);
   border-radius: 5px;
 }
 
@@ -376,7 +381,7 @@ main {
   right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--orange-yellow-crayola);
+  color: rgb(229, 117, 31);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -509,7 +514,7 @@ main {
 }
 
 .navbar-link.active {
-  color: var(--orange-yellow-crayola);
+  color: rgb(229, 117, 31);
 }
 
 /*-----------------------------------*\
@@ -873,7 +878,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--vt-burntOrange);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
 }
@@ -1051,7 +1056,7 @@ main {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--orange-yellow-crayola);
+  color: var(--vt-burntOrange);
   position: absolute;
   top: 50%;
   left: 50%;
