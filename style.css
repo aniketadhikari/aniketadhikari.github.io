@@ -232,6 +232,7 @@ article {
 article.active {
   display: block;
   animation: fade 0.5s ease backwards;
+  padding: 1em;
 }
 
 @keyframes fade {
@@ -339,7 +340,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 5em;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -617,10 +618,6 @@ main {
   margin-bottom: 30px;
 }
 
-.testimonials-title {
-  margin-bottom: 20px;
-}
-
 .testimonials-list {
   display: flex;
   justify-content: flex-start;
@@ -865,6 +862,17 @@ main {
   margin-bottom: 7px;
 }
 
+.timeline-item-text {
+  color: white;
+}
+
+p.timeline-item-title {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+  color: white;
+}
+
 .timeline-list span {
   color: var(--vegas-gold);
   font-weight: var(--fw-400);
@@ -891,6 +899,11 @@ main {
   background: var(--vt-burntOrange);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--jet);
+}
+
+.sidebar-info img {
+  border-radius: 50%;
+  width: 4em;
 }
 
 .timeline-text {
@@ -1341,6 +1354,31 @@ textarea.form-input::-webkit-resizer {
     #RESPONSIVE
   \*-----------------------------------*/
 
+  @media (min-width: 50px) {
+    /**
+       * client
+       */
+  
+    .clients-item {
+      min-width: calc(33.33% - 10px);
+    }
+    
+  .info_more-btn {
+      top: 0px;
+      right: 0px;
+      padding: 10px 15px;
+  }
+  
+    /**
+       * #PORTFOLIO, BLOG 
+       */
+  
+    .project-img,
+    .blog-banner-box {
+      height: auto;
+    }
+  }
+
 /**
    * responsive larger than 450px screen
    */
@@ -1353,6 +1391,12 @@ textarea.form-input::-webkit-resizer {
   .clients-item {
     min-width: calc(33.33% - 10px);
   }
+
+.info_more-btn {
+    top: -30px;
+    right: -30px;
+    padding: 10px 15px;
+}
 
   /**
      * #PORTFOLIO, BLOG 
@@ -1538,10 +1582,6 @@ textarea.form-input::-webkit-resizer {
 
   /* testimonials */
 
-  .testimonials-title {
-    margin-bottom: 25px;
-  }
-
   .testimonials-list {
     gap: 30px;
     margin: 0 -30px;
@@ -1564,18 +1604,18 @@ textarea.form-input::-webkit-resizer {
   }
 
   .testimonials-item-title {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
   }
 
   .testimonials-text {
-    line-clamp: 2;
+    line-clamp: 1;
     -webkit-line-clamp: 1;
   }
 
   /* testimonials modal */
 
   .modal-container {
-    padding: 20px;
+    padding: 1em;
   }
 
   .testimonials-modal {
