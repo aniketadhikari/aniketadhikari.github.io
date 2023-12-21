@@ -140,6 +140,10 @@ span {
   display: block;
 }
 
+.content-card ion-icon, .modal-img-wrapper ion-icon {
+  scale: 2;
+}
+
 button {
   font: inherit;
   background: none;
@@ -595,6 +599,16 @@ main {
   line-height: 1.6;
 }
 
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.service-item-text li {
+  list-style: disc;
+}
+
 /**
    * #testimonials 
    */
@@ -634,10 +648,6 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
-}
-
-.testimonials-item-title {
-  margin-bottom: 7px;
 }
 
 .testimonials-text {
@@ -768,7 +778,7 @@ main {
   margin-bottom: 10px;
 }
 
-.modal-content p {
+.modal-content {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -926,7 +936,7 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-yellow);
+  background: var(--vt-burntOrange);
   height: 100%;
   border-radius: inherit;
 }
@@ -1513,6 +1523,10 @@ textarea.form-input::-webkit-resizer {
     padding: 30px;
   }
 
+  .service-item .service-icon-box {
+    color: var(--light-gray); 
+  }
+
   .service-icon-box {
     margin-bottom: 0;
     margin-top: 5px;
@@ -1551,12 +1565,11 @@ textarea.form-input::-webkit-resizer {
 
   .testimonials-item-title {
     margin-bottom: 10px;
-    margin-left: 95px;
   }
 
   .testimonials-text {
     line-clamp: 2;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
   }
 
   /* testimonials modal */
@@ -1581,7 +1594,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .modal-avatar-box {
-    border-radius: 18px;
+    /* border-radius: 18px; */
     margin-bottom: 0;
   }
 
@@ -1860,7 +1873,7 @@ textarea.form-input::-webkit-resizer {
   /* service */
 
   .service-list {
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     gap: 20px 25px;
   }
 
@@ -1969,8 +1982,8 @@ textarea.form-input::-webkit-resizer {
     height: 100%;
     margin-bottom: 0;
     z-index: 1;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 
   .sidebar-info {
