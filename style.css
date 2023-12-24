@@ -828,30 +828,6 @@ main {
   margin-bottom: 30px;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 0.5em;
-  margin-top: 0.5em;
-}
-
-.skill {
-  color: var(--white-1);
-  background: var(--onyx);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-300);
-  width: max-content;
-  padding: 3px 12px;
-  border-radius: 8px;
-}
-
-.resume-item {
-  color: var(--light-gray);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
-
 /**
    * education and experience 
    */
