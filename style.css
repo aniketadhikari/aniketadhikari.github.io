@@ -864,7 +864,7 @@ main {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 1em;
 }
 
 .timeline-list {
