@@ -450,6 +450,7 @@ main {
 .sidebar.active .sidebar-info_more {
   opacity: 1;
   visibility: visible;
+  padding: 10px;
 }
 
 .contacts-list {
@@ -922,11 +923,6 @@ p.timeline-item-title {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
-.sidebar-info img {
-  border-radius: 50%;
-  width: 4em;
-}
-
 .timeline-text {
   color: var(--light-gray);
   font-weight: var(--fw-300);
@@ -1375,13 +1371,19 @@ textarea.form-input::-webkit-resizer {
     #RESPONSIVE
   \*-----------------------------------*/
 
-  @media (min-width: 50px) {
+  @media (min-width: 200px) {
     /**
        * client
        */
   
     .clients-item {
       min-width: calc(33.33% - 10px);
+    }
+
+    .sidebar-info img {
+      border-radius: 50%;
+      width: 5em;
+      padding: 10px;
     }
     
   .info_more-btn {
@@ -1413,12 +1415,6 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 10px);
   }
 
-.info_more-btn {
-    top: -30px;
-    right: -30px;
-    padding: 10px 15px;
-}
-
   /**
      * #PORTFOLIO, BLOG 
      */
@@ -1437,6 +1433,12 @@ textarea.form-input::-webkit-resizer {
   /**
      * CUSTOM PROPERTY
      */
+
+     .sidebar-info img {
+      border-radius: 50%;
+      width: 8em;
+      padding: 10px;
+    }
 
   :root {
     /**
