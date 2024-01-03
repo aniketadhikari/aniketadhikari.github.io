@@ -1713,6 +1713,7 @@ textarea.form-input::-webkit-resizer {
   .project-img,
   .blog-banner-box {
     border-radius: 16px;
+    height: 12em;
   }
 
   .blog-posts-list {
